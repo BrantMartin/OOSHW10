@@ -78,8 +78,43 @@ function newEngineer() {
             name: 'engineerGitHub',
         }
     ]).then(response => {
-        const newEngineer = new Engineer(response.managerName, response.managerId, response.managerEmail, response.managerOfficeNumber)
+        const newEngineer = new Engineer(response.engineerName, response.engineerId, response.engineerEmail, response.engineerGitHub)
         employeeDatabase.push(newEngineer)
         newTeamMember()
     });
 };
+
+function newIntern() {
+    inquirer.prompt([
+        {
+            type: 'input',
+            message: 'Enter intern name',
+            name: 'internName',
+        },
+        {
+            type: 'input',
+            message: 'Enter intern ID',
+            name: 'internId',
+        },
+        {
+            type: 'input',
+            message: 'Enter intern email',
+            name: 'internrEmail',
+        },
+        {
+            type: 'input',
+            message: 'Enter intern\'s school',
+            name: 'internSchool',
+        }
+    ]).then(response => {
+        const newIntern = new Intern(response.internName, response.internId, response.internEmail, response.internSchool)
+        employeeDatabase.push(newIntern)
+        newTeamMember()
+    });
+};
+
+function genHtml() {
+    console.log(employeeDatabase)
+}
+
+newManager()
