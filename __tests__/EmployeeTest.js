@@ -20,12 +20,12 @@ test("Check getName", function(){
     expect(testObject.getName()).toBe('Bryan')
 })
 
-test("Check Employee ID", function(){
+test("Check getId", function(){
     var testObject = new Employee("Bryan",123)
     expect(testObject.getId()).toBe(123)
 })
 
-test("Check Employee email", function(){
+test("Check getEmail", function(){
     var testObject = new Employee("Bryan",123 ,'junk@junk.com')
     expect(testObject.getEmail()).toBe('junk@junk.com')
 })
