@@ -121,7 +121,7 @@ function genHtml() {
         if(element.getRole() === "intern"){
             htmlTEXT += `<div class="card" style="width: 18rem;">
             <div class="card-header">
-              <h3>Intern </h3>
+              <h3>Intern</h3>
             </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">${element.name}</li>
@@ -133,7 +133,7 @@ function genHtml() {
         }else if(element.getRole() === 'engineer'){
             htmlTEXT += `<div class="card" style="width: 18rem;">
             <div class="card-header">
-              <h3>Intern </h3>
+              <h3>Engineer</h3>
             </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">${element.name}</li>
@@ -145,7 +145,7 @@ function genHtml() {
         }else if (element.getRole() === 'manager'){
             htmlTEXT += `<div class="card" style="width: 18rem;">
             <div class="card-header">
-              <h3>Intern </h3>
+              <h3>Manager</h3>
             </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">${element.name}</li>
